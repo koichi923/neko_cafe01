@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>お問い合わせ</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/tailwind/tailwind.min.css">
+    
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+    <script src="../js/main.js"></script>
+  </head>
+  <body class="antialiased bg-body text-body font-body">
+    <!-- ▼▼▼▼共通ヘッダー▼▼▼▼　-->
+    <header>
+      <div class="container px-4 mx-auto">
+        <nav class="flex items-center justify-between py-6">
+          <a class="text-3xl font-semibold leading-none" href="/">ねこカフェららべる</a>
+          <ul class="hidden lg:flex ml-12 mr-auto space-x-12">
+            <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="#">設備</a></li>
+            <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="#">ねこちゃんたち</a></li>
+            <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="/blogs">ブログ</a></li>
+            <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="#">メニュー</a></li>
+            <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="#">よくあるご質問</a></li>
+          </ul>
+          <div>
+            <a class="mr-2 inline-block px-4 py-3 text-xs text-blue-500 hover:text-blue-600 leading-none border border-blue-200 hover:border-blue-300 rounded" href="/contact">お問い合わせ</a>
+            <a class="inline-block px-4 py-3 text-xs font-semibold leading-none bg-blue-500 hover:bg-blue-600 text-white rounded" href="/#access">アクセス</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- ▲▲▲▲共通ヘッダー▲▲▲▲　-->
+
+    <!-- ▼▼▼▼ページ毎の個別内容▼▼▼▼　-->
+    <main>
+      <section class="bg-gray-100 pt-2">
+        <div class="container mx-auto">
+          <p class="text-left px-4 pt-2 text-gray-400"><a href="#" class="text-blue-600 hover:underline">ホーム</a><span class="px-2">&gt</span>お問い合わせ</p>
+          <h1 class="mt-2 text-4xl font-bold font-heading h-40 text-center p-12">お問い合わせ</h1>
+        </div>
+      </section>
+
+      <section class="mt-20 pb-24">
+        <div class="w-192 mx-auto">
+          <p class="text-left">以下のフォームに必要事項をご入力の上、ご送信下さい。<br>
+            通常お問い合わせから3営業日以内にご入力いただいたメールアドレスに返信させていただきます。<br>
+            なお、info@nekocafe.xx.xxからの返信が受信できるように事前に設定のご確認をお願い致します。
+          </p>
+          <div class="mt-8">
+            <!-- ▼▼▼▼エラーメッセージ▼▼▼▼　-->
+            <div class="mb-8 py-4 px-6 border border-pink-300 bg-pink-50 rounded">
+              <ul>
+                <li class="text-pink-400">お名前は、必ず指定してください。</li>
+                <li class="text-pink-400">電話番号は、必ず指定してください。</li>
+                <li class="text-pink-400">お問い合わせ内容は、必ず指定してください。</li>
+              </ul>
+            </div>
+            <!-- ▲▲▲▲エラーメッセージ▲▲▲▲　-->
+
+            <form>
+              <div class="mb-4">
+                <label for="name" class="block text-left p-1 my-1 font-medium">お名前<span class="text-white text-xs bg-yellow-400 mx-2 py-1 px-2">必須</span></label>
+                <input id="name" class="w-full p-4 text-xs leading-none bg-blueGray-50 rounded outline-none border" type="text" placeholder="例）田中太郎">
+              </div>
+              <div class="mb-4">
+                <label for=name_kana class="block text-left p-1 my-1 font-medium">お名前（フリガナ）<span class="text-white text-xs bg-yellow-400 mx-2 py-1 px-2">必須</span></label>
+                <input id="name_kana" class="w-full p-4 text-xs leading-none bg-blueGray-50 rounded outline-none border" type="text" placeholder="例）タナカタロウ">
+              </div>
+              <div class="mb-4">
+                <label for="phone" class="block text-left p-1 my-1 font-medium">電話番号</label>
+                <input id="phone" class="w-full p-4 text-xs leading-none bg-blueGray-50 rounded outline-none border" type="text" placeholder="例）0312345678">
+              </div>
+              <div class="mb-4">
+                <label for="email" class="block text-left p-1 my-1 font-medium">メールアドレス<span class="text-white text-xs bg-yellow-400 mx-2 py-1 px-2">必須</span></label>
+                <input id="email" class="w-full p-4 text-xs leading-none bg-blueGray-50 rounded outline-none border" type="email" placeholder="info@example.com">
+              </div>
+              <div class="mb-4">
+                <label for="body" class="block text-left p-1 my-1 font-medium">お問い合わせ内容<span class="text-white text-xs bg-yellow-400 mx-2 py-1 px-2">必須</span></label>
+                <textarea id="body" class="w-full h-24 p-4 text-xs leading-none resize-none bg-blueGray-50 rounded outline-none border" type="text" placeholder="ご自由にご記入ください"></textarea>
+              </div>
+              <div class="text-center">
+                  <p>送信される際は、<a href="#" class="text-blue-600 hover:underline">個人情報保護方針</a>に同意したものとします。</p>
+                  <button class="mt-6 text-white font-semibold leading-none bg-blue-600 hover:bg-blue-700 rounded py-4 px-12" type="submit">送信</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ▲▲▲▲ページ毎の個別内容▲▲▲　-->
+
+    <!-- ▼▼▼▼共通フッター▼▼▼▼　-->
+    <footer class="bg-black">
+      <div class="px-4 container mx-auto p-10 flex justify-between">
+        <div class="text-white text-left">
+          <h2 class="text-xl font-semibold">ねこカフェららべる</h2>
+          <p>〒123-4567</p>
+          <p>東京都墨田区押上1-2-3 Illuminateビル9F</p>
+        </div>
+
+        <ul class="text-white text-left hidden md:flex flex-wrap flex-col h-12 md:w-128">
+          <li class="ml-6"><a href="/" class="hover:underline">ホーム</a></li>
+          <li class="ml-6"><a href="#" class="hover:underline">設備</a></li>
+          <li class="ml-6"><a href="#" class="hover:underline">ねこちゃんたち</a></li>
+          <li class="ml-6"><a href="/blogs" class="hover:underline">ブログ</a></li>
+          <li class="ml-6"><a href="/#access" class="hover:underline">アクセス</a></li>
+          <li class="ml-6"><a href="#" class="hover:underline">よくあるご質問</a></li>
+          <li class="ml-6"><a href="/contact" class="hover:underline">お問い合わせ</a></li>
+          <li class="ml-6"><a href="#" class="hover:underline">プライバシーポリシー</a></li>
+        </ul>
+      </div>
+    </footer>
+    <!-- ▲▲▲▲共通フッター▲▲▲▲　-->
+  </body>
+</html>
+
